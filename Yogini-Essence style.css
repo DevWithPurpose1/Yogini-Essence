@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #faf8f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #b26e63;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 80px 10%;
+  background-color: #f0e9e4;
+  gap: 30px;
+}
+.hero img {
+  width: 100%;
+  border-radius: 12px;
+}
+.hero button {
+  padding: 12px 20px;
+  background-color: #b26e63;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.hero button:hover {
+  background-color: #8f564e;
+}
+
+.products {
+  padding: 60px 10%;
+}
+.products h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.product-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product {
+  width: 260px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.product img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.product button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: #b26e63;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.product button:hover {
+  background-color: #8f564e;
+}
+
+.testimonials {
+  padding: 60px 10%;
+  background-color: #fff;
+}
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.testimonial-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+  background-color: #f7f3f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact {
+  padding: 60px 10%;
+  background-color: #f0e9e4;
+}
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact input, .contact textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+.contact button {
+  padding: 12px;
+  background-color: #b26e63;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.contact button:hover {
+  background-color: #8f564e;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

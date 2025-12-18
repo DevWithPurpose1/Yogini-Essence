@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yogini Essence</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h2>Yogini Essence</h2>
+    <nav>
+      <a href="#hero">Hem</a>
+      <a href="#products">Produkter</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div>
+      <h1>Handgjorda Yogaprodukter från Indien</h1>
+      <p>Vackra, etiska produkter för en djupare yogapraktik.</p>
+      <button onclick="scrollToProducts()">Se produkter</button>
+    </div>
+    <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3" alt="Yoga mat" />
+  </section>
+
+  <section id="products" class="products">
+    <h2>Utvalda produkter</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07d" alt="Meditationskudde" />
+        <h3>Meditationskudde</h3>
+        <p>Handsydd kudde med ekologisk bomull.</p>
+        <button onclick="addToCart('Meditationskudde')">Lägg i varukorg</button>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1600172454132-0d43a7cbfe3f" alt="Yogamatta" />
+        <h3>Yogamatta</h3>
+        <p>Naturligt gummi och jute – perfekt grepp.</p>
+        <button onclick="addToCart('Yogamatta')">Lägg i varukorg</button>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1599222363819-d6541b9e7c52" alt="Rökelse" />
+        <h3>Rökelse</h3>
+        <p>Traditionell ayurvedisk rökelse från Kerala.</p>
+        <button onclick="addToCart('Rökelse')">Lägg i varukorg</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Vad våra kunder säger</h2>
+    <div class="testimonial-grid">
+      <div class="card">“Fantastiska produkter!” – Anna</div>
+      <div class="card">“Hög kvalitet och snabb leverans.” – Sofia</div>
+      <div class="card">“Älskar designen.” – Maria</div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Kontakta oss</h2>
+    <form onsubmit="return handleSubmit(event)">
+      <input type="text" placeholder="Ditt namn" required />
+      <input type="email" placeholder="Din e-post" required />
+      <textarea placeholder="Meddelande" rows="4" required></textarea>
+      <button type="submit">Skicka</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Yogini Essence – Alla rättigheter förbehållna
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
